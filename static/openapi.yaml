@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: PySD API
+  version: "1.0"
+paths:
+  /upload:
+    post:
+      summary: Upload a Vensim or XMILE model
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Model uploaded successfully
+  /simulate:
+    get:
+      summary: Run the system dynamics simulation
+      responses:
+        '200':
+          description: Simulation results
+  /visualize:
+    get:
+      summary: Plot simulation results
+      responses:
+        '200':
+          description: Base64 encoded image
+  /convert:
+    get:
+      summary: Return the converted Python model
+      responses:
+        '200':
+          description: Python model file
+  /sfd:
+    get:
+      summary: Generate Stock and Flow Diagram
+      responses:
+        '200':
+          description: Base64 encoded SFD image
+  /cld:
+    get:
+      summary: Generate Causal Loop Diagram
+      responses:
+        '200':
+          description: List of feedback loops

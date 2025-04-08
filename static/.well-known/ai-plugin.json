@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "System Dynamics Model API",
+  "name_for_model": "pysd_api",
+  "description_for_human": "Upload, simulate, and visualize system dynamics models.",
+  "description_for_model": "Plugin for interacting with system dynamics models using PySD via FastAPI. Allows file upload, simulation, and diagram generation.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-domain.com/static/openapi.yaml"
+  },
+  "logo_url": "https://your-domain.com/static/logo.png",
+  "contact_email": "support@example.com",
+  "legal_info_url": "https://your-domain.com/legal"
+}
