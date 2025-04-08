@@ -9,9 +9,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://your-domain.com/static/openapi.yaml"
+    "url": "https://pysd-4.onrender.com/static/openapi.yaml"
   },
-  "logo_url": "https://your-domain.com/static/logo.png",
+  "logo_url": "https://pysd-4.onrender.com/static/logo.png",
   "contact_email": "support@example.com",
   "legal_info_url": "https://your-domain.com/legal"
 }
